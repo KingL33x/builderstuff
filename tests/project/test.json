@@ -1,9 +1,9 @@
 {
   "id": "project",
-  "title": "Greenleaf Café ordering test",
+  "title": "Study Rooms Booking",
   "guide": {
-    "name": "Sam",
-    "role": "Greenleaf Café · your guide"
+    "name": "Leaky",
+    "role": "Study Rooms · your guide"
   },
   "welcome": "Hi, I'm Sam. Thanks for helping us test our new ordering site. I'll talk you through four short tasks, one at a time. There are no wrong answers. We're testing the site, not you.",
   "prototype": {
@@ -22,35 +22,46 @@
       }
     },
     {
-      "title": "Add an oat milk flat white to your basket",
-      "say": "Choose a flat white, make it with oat milk, and add it to your basket.",
+      "title": "Find a room for your group",
+      "say": "You have a gap between lectures tomorrow. Find a room that is free from 2pm to 4pm for you and 3 friends.",
       "audio": {
         "type": "voice"
       },
       "check": {
         "type": "click",
-        "match": "#add-flat-white"
+        "match": "find a room"
       }
     },
     {
-      "title": "Change the collection time to 12:30",
-      "say": "You can only pick your order up at half past twelve. Change the collection time to match.",
+      "title": "Narrow down the rooms",
+      "say": "Your group needs a whiteboard. Show only the rooms that have one.",
       "audio": {
         "type": "voice"
+      },
+      "check": {
+        "type": "click",
+        "match": "apply filters"
+      }
+    },
+    {
+      "title": "Look at one room",
+      "say": "Pick a room that is free. Find out which floor it is on and what facilities it has.",
+      "audio": {
+        "type": "none"
       },
       "check": {
         "type": "manual"
       }
     },
     {
-      "title": "Go to checkout, but stop before paying",
-      "say": "Head to the checkout. When you reach the payment page, stop there.",
+      "title": "Book the room",
+      "say": "You are happy with the room. Book it.",
       "audio": {
         "type": "voice"
       },
       "check": {
-        "type": "page",
-        "match": "pay.html"
+        "type": "click",
+        "match": "confirm booking"
       }
     }
   ],
